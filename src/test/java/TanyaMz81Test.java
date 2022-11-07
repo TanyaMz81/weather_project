@@ -117,6 +117,9 @@ public class TanyaMz81Test {
         WebElement farSign = driver.findElement(By.xpath(
                 "//div[@class='current-temp']/span"));
         Thread.sleep(3000);
+        // String far = farSign.getText();
+        // String actualResult = far.substring((far.length()-2));
+
         String actualResult = farSign.getText();
         boolean bool1 = actualResult.endsWith("F");
         Assert.assertTrue(bool1);
